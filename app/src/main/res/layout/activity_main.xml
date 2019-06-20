@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    tools:context=".MainActivity"
+    android:background="@drawable/bggg"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/tent"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="82dp"
+                android:background="@drawable/selectable_button_bg"
+                android:src="@drawable/tent"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:onClick="RainOnTent" />
+
+            <Button
+                android:id="@+id/heavyRain"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tent"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/heavy"
+                android:gravity="center"
+                android:onClick="HeavyRain" />
+
+            <Button
+                android:id="@+id/Thunderstorm"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/heavyRain"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/thunder"
+                android:gravity="center"
+                android:onClick="Thunderstorm" />
+
+            <Button
+                android:id="@+id/street"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/Thunderstorm"
+                android:background="@drawable/street"
+                android:gravity="center"
+                android:onClick="WateryStreet" />
+
+            <Button
+                android:id="@+id/ground"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_below="@id/street"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/ground"
+                android:gravity="center"
+                android:onClick="Ground" />
+
+            <Button
+                android:id="@+id/autumn"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="30dp"
+                android:layout_below="@id/ground"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/autumn"
+                android:gravity="center"
+                android:onClick="autumn" />
+
+            <Button
+                android:id="@+id/umbrella"
+                android:layout_width="300dp"
+                android:layout_height="51dp"
+                android:layout_below="@+id/autumn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/umbrella"
+                android:scaleType="fitXY"
+                android:gravity="center"
+                android:onClick="umbrella"
+                android:layout_marginBottom="35dp"/>
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_alignBottom="@id/umbrella"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                ads:adSize="SMART_BANNER"
+                ads:adUnitId="ca-app-pub-7381031943051414/6361637952"
+                android:layout_marginBottom="30dp">
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

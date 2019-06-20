@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.kartik.rainsounds">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.ActionBar.Transparent">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Rain"
+            android:label="Rain on Tent"
+            android:theme="@style/AppTheme.ActionBar.Transparent"/>
+        <activity
+            android:name=".HeavyRain"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".Ground"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".ThunderStrom"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".WateryStreet"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".Autumn"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+        <activity
+            android:name=".umbrella"
+            android:theme="@style/AppTheme.ActionBar.Transparent" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+    </application>
+
+</manifest>

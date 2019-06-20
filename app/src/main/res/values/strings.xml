@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RainCanetis</string>
+    <string name="tent">Rain on Tent</string>
+    <string name="autumn">Autumn Rain</string>
+    <string name="ground">Rain on Ground</string>
+    <string name="heavy">Heavy Rainfall</string>
+    <string name="thunder">ThunderStorm</string>
+    <string name="umbrella">Rain on Umbrella</string>
+    <string name="watery">Rain on Watery Street</string>
+    <string name="title">RainCanetis</string>
+</resources>
